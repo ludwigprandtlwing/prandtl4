@@ -1,0 +1,44 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+forces
+{
+        type                forces;
+        functionObjectLibs  ( "libforces.so" ); //Lib to load
+        outputControl       timeStep;
+        outputInterval      1;
+        patches             (aircraftPatch); //Patch name over forces will be calculated
+        pName               p;
+        UName               U;
+        rhoName             rhoInf; //Reference density
+        log                 true;
+        rhoInf              1.225; //Aire density
+        CofR                (0 0 0); //Origin for moment calculations
+}
+
+forceCoeffs
+{
+type forceCoeffs;
+functionObjectLibs ("libforces.so");
+patches (aircraftPatch);
+// pName p;
+// UName U;
+rhoName rhoInf;
+rhoInf 1.225;
+CofR (0 0 0);
+liftDir (0 1 0);
+dragDir (-1 0 0);
+pitchAxis (0 0 1);
+magUInf 45; // Free stream velocity
+lRef 0.01276; // Mean Chord
+Aref 0.001218; // Ref. Area = cross sectional area?
+outputControl timeStep;
+outputInterval 1;
+}
+
+// ************************************************************************* //

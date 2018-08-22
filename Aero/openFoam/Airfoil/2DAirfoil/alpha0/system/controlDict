@@ -1,0 +1,84 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.2.1                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application         simpleFoam;
+
+startFrom           startTime;
+
+startTime           0;
+
+stopAt              endTime;
+
+endTime             10000;
+
+deltaT              1;
+
+writeControl        timeStep;
+
+writeInterval       100;
+
+purgeWrite          0;
+
+writeFormat         ascii;
+
+writePrecision      7;
+
+writeCompression    off;
+
+timeFormat          general;
+
+timePrecision       6;
+
+runTimeModifiable   true;
+
+functions
+(
+forces
+{
+type forces;
+functionObjectLibs ("libforces.so");
+patches (airfoil);
+pName p;
+UName U;
+rhoName rhoInf;
+rhoInf 1.225; // Reference density, fluid
+CofR (0.2704 -0.0012 4.0128); // Origin for moment calculations
+outputControl timeStep;
+outputInterval 100;
+}
+forceCoeffs
+{
+type forceCoeffs;
+functionObjectLibs ("libforces.so");
+patches (airfoil);
+pName p;
+UName U;
+rhoName rhoInf;
+rhoInf 1.225;
+CofR (0.2704 -0.0012 4.0128);
+liftDir (0 1 0);
+dragDir (1 0 0);
+pitchAxis (0 0 1);
+magUInf 45; // Free stream velocity
+lRef 1; // Diameter of cylinder?
+Aref 0.1; // Ref. Area = cross sectional area?
+outputControl timeStep;
+outputInterval 100;
+}
+);
+
+// ************************************************************************* //
