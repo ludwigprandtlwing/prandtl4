@@ -1,0 +1,158 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /media/asenna/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/WingPrandtl.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import PartDesign
+import importAirfoilDAT
+import DraftTools
+import PartDesignGui
+import Part
+import Draft
+
+App.newDocument("Unnamed")
+#App.setActiveDocument("Unnamed")
+#App.ActiveDocument=App.getDocument("Unnamed")
+#Gui.ActiveDocument=Gui.getDocument("Unnamed")
+#Gui.activateWorkbench("PartWorkbench")
+#Gui.activateWorkbench("PartDesignWorkbench")
+
+
+
+
+App.activeDocument().addObject('PartDesign::Body','Body')
+
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/rootairfoil.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire],delta=FreeCAD.Vector(2000.0,2000.0,2.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+FreeCAD.ActiveDocument.recompute()
+
+
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_01.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire001],delta=FreeCAD.Vector(1500.0,1500.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire001],FreeCAD.Vector(1000.0,100.0,1000.0),copy=False)
+
+
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_02.dat","Unnamed")
+
+Draft.scale([FreeCAD.ActiveDocument.DWire002],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+
+Draft.move([FreeCAD.ActiveDocument.DWire002],FreeCAD.Vector(1500.0,200.0,2000.0),copy=False)
+
+
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_03.dat","Unnamed")
+
+Draft.scale([FreeCAD.ActiveDocument.DWire003],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+
+Draft.move([FreeCAD.ActiveDocument.DWire003],FreeCAD.Vector(2000.0,400.0,3000.0),copy=False)
+
+
+xdist = 4000.0
+
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_04.dat","Unnamed")
+
+Draft.scale([FreeCAD.ActiveDocument.DWire004],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+
+Draft.move([FreeCAD.ActiveDocument.DWire004],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_05.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire005],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire005],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_06.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire006],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire006],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_07.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire007],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire007],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_08.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire008],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire008],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_09.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire009],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire009],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_10.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire010],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire010],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_11.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire011],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire011],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_12.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire012],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire012],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_13.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire013],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire013],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_14.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire014],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire014],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_15.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire015],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire015],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_16.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire016],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire016],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_17.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire017],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire017],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_18.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire018],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire018],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/section_19.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire019],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire019],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+xdist = xdist + 1000.0
+importAirfoilDAT.insert(u"J:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/tipairfoil.dat","Unnamed")
+Draft.scale([FreeCAD.ActiveDocument.DWire020],delta=FreeCAD.Vector(1100.0,1100.0,1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+Draft.move([FreeCAD.ActiveDocument.DWire020],FreeCAD.Vector(2000.0,400.0,xdist),copy=False)
+
+
+from FreeCAD import Base
+App.getDocument('Unnamed').addObject('Part::Loft','Loft')
+App.getDocument('Unnamed').ActiveObject.Sections=[App.getDocument('Unnamed').DWire, App.getDocument('Unnamed').DWire001, App.getDocument('Unnamed').DWire002, App.getDocument('Unnamed').DWire003, App.getDocument('Unnamed').DWire004,]
+App.getDocument('Unnamed').ActiveObject.Solid=True
+App.getDocument('Unnamed').ActiveObject.Ruled=False
+App.getDocument('Unnamed').ActiveObject.Closed=False
+
+# Macro End: /media/asenna/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/WingPrandtl.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
