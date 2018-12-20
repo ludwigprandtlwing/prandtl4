@@ -20,12 +20,13 @@ App.newDocument("Unnamed")
 
 twist = [8.3274,8.5524,8.7259,8.8441,8.903,8.8984,8.8257,8.6801,8.4565,8.1492,7.7522,7.2592,6.6634,5.9579,5.1362,4.1927,3.1253,1.9394,0.6589,-0.6417,-1.6726]
 
-pathsectionfiles = u"/media/asenna/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/"
-sectionfiles = ['rootairfoil.dat', 'section_01.dat', 'section_02.dat', 'section_03.dat',
+pathsectionfiles = u"F:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/"
+#pathsectionfiles = u"/media/asenna/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/"
+sectionfiles = ['PRNCENMOD.dat', 'section_01.dat', 'section_02.dat', 'section_03.dat',
 'section_04.dat', 'section_05.dat', 'section_06.dat', 'section_07.dat', 'section_08.dat',
 'section_09.dat', 'section_10.dat', 'section_11.dat', 'section_12.dat', 'section_13.dat',
 'section_14.dat', 'section_15.dat', 'section_16.dat', 'section_17.dat', 'section_18.dat',
-'section_19.dat', 'tipairfoil.dat']
+'section_19.dat', 'PRNTIPMOD.dat']
 
 b = 2.25 # Span in metres
 spanrange = list(range(0,21))
@@ -68,29 +69,32 @@ App.activeDocument().addObject('PartDesign::Body','Body')
 for cstation in range(0,21):
 	# First import the 2D section
 	importAirfoilDAT.insert(pathsectionfiles + sectionfiles[cstation],"Unnamed")
-	sectionobject=giveSection()
 
 	# Now scale the imported section to the chordsize at this spanwise station
-	Draft.scale([sectionobject],delta=FreeCAD.Vector(chordrange[cstation],chordrange[cstation],1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+	Draft.scale([FreeCAD.ActiveDocument.ActiveObject],delta=FreeCAD.Vector(chordrange[cstation],chordrange[cstation],1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+	FreeCAD.ActiveDocument.recompute()
+
 	# Rotate the sketch through the twist angle
 	rotatepoint = 0.25*chordrange[cstation]
-	Draft.rotate([sectionobject],twist[cstation],FreeCAD.Vector(rotatepoint,0.0,0.0),axis=FreeCAD.Vector(0.0,0.0,1.0),copy=False)
+	Draft.rotate([FreeCAD.ActiveDocument.ActiveObject],twist[cstation],FreeCAD.Vector(rotatepoint,0.0,0.0),axis=FreeCAD.Vector(0.0,0.0,1.0),copy=False)
 	# Move the sketch to the correct sweepback position
-	Draft.move([sectionobject],FreeCAD.Vector(sweeprange[cstation],0.0,spanrange[cstation]),copy=False)
+	Draft.move([FreeCAD.ActiveDocument.ActiveObject],FreeCAD.Vector(sweeprange[cstation],0.0,spanrange[cstation]),copy=False)
+	Draft.downgrade(FreeCAD.ActiveDocument.ActiveObject,delete=True)
+	Draft.downgrade(FreeCAD.ActiveDocument.ActiveObject,delete=True)
 	
 
 FreeCAD.ActiveDocument.recompute()
 
-
-	
-
+points = [FreeCAD.Vector(237.458402179,28.9047140196,0.0),FreeCAD.Vector(239.026561772,25.1728065754,0.0),FreeCAD.Vector(239.629242455,22.004623466,0.0)]
+spline = Draft.makeBSpline(points,closed=False,face=False,support=None)
+Draft.autogroup(spline)
 
 
 from FreeCAD import Base
-App.getDocument('Unnamed').addObject('Part::Loft','Loft')
-App.getDocument('Unnamed').ActiveObject.Sections=[App.getDocument('Unnamed').DWire, App.getDocument('Unnamed').DWire001, App.getDocument('Unnamed').DWire002, App.getDocument('Unnamed').DWire003, App.getDocument('Unnamed').DWire004,]
-App.getDocument('Unnamed').ActiveObject.Solid=True
-App.getDocument('Unnamed').ActiveObject.Ruled=False
-App.getDocument('Unnamed').ActiveObject.Closed=False
+#App.getDocument('Unnamed').addObject('Part::Loft','Loft')
+#App.getDocument('Unnamed').ActiveObject.Sections=[App.getDocument('Unnamed').DWire, #App.getDocument('Unnamed').DWire001, App.getDocument('Unnamed').DWire002, App.getDocument('Unnamed').DWire003, App.getDocument('Unnamed').DWire004,]
+#App.getDocument('Unnamed').ActiveObject.Solid=True
+#App.getDocument('Unnamed').ActiveObject.Ruled=False
+#App.getDocument('Unnamed').ActiveObject.Closed=False
 
 # Macro End: /media/asenna/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/WingPrandtl.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,64 @@
+# Macro to create Prandtl wing geometry using guidesplines
+
+import FreeCAD
+import PartDesign
+import importAirfoilDAT
+import DraftTools
+import PartDesignGui
+import Part
+import Draft
+import math
+
+CADdocname = "PrandtlWing"
+
+App.newDocument(CADdocname)
+
+fulltwist = [8.3274,8.5524,8.7259,8.8441,8.903,8.8984,8.8257,8.6801,8.4565,8.1492,7.7522,7.2592,6.6634,5.9579,5.1362,4.1927,3.1253,1.9394,0.6589,-0.6417,-1.6726]
+twist = [-fulltwist[0], -fulltwist[-1]]
+
+pathsectionfiles = u"F:/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/"
+#pathsectionfiles = u"/media/asenna/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/CAD/"
+
+sectionfiles = ['PRNCENMOD.dat', 'PRNTIPMOD.dat']
+
+b = 2.25 # Span in metres
+spanrange = list(range(0,2))
+spanrange = [(b/2)*spanpos*1000 for spanpos in spanrange]
+
+sweepangle = 24*math.pi/180 # [radians]
+sweeprange = [math.tan(sweepangle)*spanpos for spanpos in spanrange]
+
+
+rootchord = 240 # [mm]
+tipchord = 60 # [mm]
+
+chordrange = [rootchord, tipchord]
+
+# Remember to add the dihedral angle
+# Add the dihedral angle last to prevent parallellogram of wing.
+
+
+
+
+
+App.activeDocument().addObject('PartDesign::Body','Body')
+
+for cstation in range(0,2):
+	# First import the 2D section
+	importAirfoilDAT.insert(pathsectionfiles + sectionfiles[cstation], CADdocname)
+
+	# Now scale the imported section to the chordsize at this spanwise station
+	Draft.scale([FreeCAD.ActiveDocument.ActiveObject],delta=FreeCAD.Vector(chordrange[cstation],chordrange[cstation],1.0),center=FreeCAD.Vector(0.0,0.0,0.0),copy=False,legacy=True)
+	FreeCAD.ActiveDocument.recompute()
+
+	# Rotate the sketch through the twist angle
+	rotatepoint = 0.25*chordrange[cstation]
+	Draft.rotate([FreeCAD.ActiveDocument.ActiveObject],twist[cstation],FreeCAD.Vector(rotatepoint,0.0,0.0),axis=FreeCAD.Vector(0.0,0.0,1.0),copy=False)
+	# Move the sketch to the correct sweepback position
+	Draft.move([FreeCAD.ActiveDocument.ActiveObject],FreeCAD.Vector(sweeprange[cstation],0.0,spanrange[cstation]),copy=False)
+	Draft.downgrade(FreeCAD.ActiveDocument.ActiveObject,delete=True)
+	Draft.downgrade(FreeCAD.ActiveDocument.ActiveObject,delete=True)
+	
+
+FreeCAD.ActiveDocument.recompute()
+
