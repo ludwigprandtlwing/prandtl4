@@ -2,6 +2,7 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -18,6 +19,86 @@
    sodipodi:docname="AircraftMoment.svg">
   <defs
      id="defs2">
+    <marker
+       inkscape:stockid="TriangleInL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1366"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1364"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(-0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker1362"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1239"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleInL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleInL"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1230"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(-0.8)" />
+    </marker>
+    <linearGradient
+       id="linearGradient981"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop979" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient959"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop957" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient953"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop951" />
+    </linearGradient>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker2613"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1518"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
@@ -76,6 +157,82 @@
          style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
          transform="scale(0.8)" />
     </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutL-3"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4713-6"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2613-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1518-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker2613-7-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1518-6-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutL-6-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4713-7-7"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutL-6-2-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4713-7-7-3"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="scale(0.8)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -84,9 +241,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="206.73789"
-     inkscape:cy="540.93709"
+     inkscape:zoom="1.4"
+     inkscape:cx="254.97249"
+     inkscape:cy="308.76942"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -103,7 +260,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -111,15 +268,37 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="61.160286"
+       y="180.5463"
+       id="text2629-2-1"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-6-8"
+         x="61.160286"
+         y="180.5463"
+         style="font-size:3.52777767px;stroke-width:0.26458332">V<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1430">s</tspan></tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 148.86913,172.4524 c 0,0 -93.009801,-9.15399 -98.35519,-11.75986 -5.679476,-1.80407 -7.349912,-3.27405 -9.421252,-7.75082 -0.668173,-2.80632 0.861912,-6.27412 4.152175,-6.8383 5.144941,-1.53679 14.289422,-0.1107 15.893041,0.15657 6.08038,1.60361 17.979726,4.21082 34.344134,8.88671 12.007332,3.43091 29.208312,9.34746 30.601542,9.70866 1.80407,0.46773 22.78555,7.59704 22.78555,7.59704 z"
        id="path14"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccssc" />
+       sodipodi:nodetypes="cccccssc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <g
        id="g4565"
-       transform="translate(-7.2162772,-2.1381562)">
+       transform="translate(-7.2162772,-2.1381562)"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <ellipse
          style="stroke-width:0.26458332"
          ry="3.5907736"
@@ -153,21 +332,288 @@
     </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL)"
-       d="m 100.35971,162.42979 0.0783,-29.71834"
+       d="M 73.182583,157.18403 47.335739,98.333311"
        id="path4569"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.27444056;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL-6)"
-       d="m 73.206381,157.05065 -0.135179,32.18556"
+       style="fill:none;stroke:#000000;stroke-width:0.30477661;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL-6)"
+       d="m 73.164786,156.3599 -0.09255,57.97594"
        id="path4569-5"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5534)"
-       d="m 106.90781,174.05602 c -12.828936,6.94901 -18.174326,-7.21628 -17.372517,-15.50163 0.801806,-7.75082 3.474502,-12.56168 10.690777,-12.82894 7.21628,-0.26728 8.55263,8.28535 8.55263,8.28535"
+       style="fill:none;stroke:#000000;stroke-width:0.3527928px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5534)"
+       d="m 164.09326,186.43988 c -17.55818,14.9538 -27.75615,-5.99231 -26.67058,-16.01517 -0.0484,-9.614 4.20018,-18.0186 15.67124,-18.31753 10.33714,1.02398 12.36915,9.64847 12.36915,9.64847"
        id="path5524"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccc" />
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker2613)"
+       d="M 11.759859,190.89399 59.333836,166.03793"
+       id="path2587"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1.05833327,1.05833327;stroke-dashoffset:0"
+       d="m 12.294398,145.99272 150.740012,29.13237 v 0"
+       id="path2589"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutL-3)"
+       d="M 73.199426,156.84993 106.95369,137.02056"
+       id="path4569-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="20.045216"
+       y="167.37428"
+       id="text2617"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         x="20.045216"
+         y="167.37428"
+         style="font-size:3.52777767px;stroke-width:0.26458332"
+         id="tspan2623">α</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="33.94323"
+       y="183.67772"
+       id="text2629"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627"
+         x="33.94323"
+         y="183.67772"
+         style="font-size:3.52777767px;stroke-width:0.26458332">γ</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 20.579753,188.2213 67.35192,187.95403"
+       id="path2631"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2613-7)"
+       d="m 11.759859,190.89399 47.509127,0.26728"
+       id="path2587-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2613-7-8)"
+       d="m 59.268986,191.16127 0.06485,-25.12334"
+       id="path2587-6-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="28.8892"
+       y="213.56471"
+       id="text2629-8"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2"
+         x="28.8892"
+         y="213.56471"
+         style="font-size:3.52777767px;stroke-width:0.26458332">L/D = V<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan2202">H</tspan>/V<tspan
+   style="font-size:64.99999762%;baseline-shift:sub"
+   id="tspan2200">S</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="17.394003"
+       y="220.26743"
+       id="text2629-8-5"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3"
+         x="17.394003"
+         y="220.26743"
+         style="font-size:3.52777767px;stroke-width:0.26458332">gamma is the atan of L/D</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke-width:0.179;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke:#000000;stroke-opacity:1"
+       id="path941"
+       sodipodi:type="arc"
+       sodipodi:cx="153.6031"
+       sodipodi:cy="173.16071"
+       sodipodi:rx="2.4245887"
+       sodipodi:ry="2.7023389"
+       sodipodi:start="1.6446209"
+       sodipodi:end="1.6152115"
+       sodipodi:open="true"
+       d="m 153.42427,175.85568 a 2.4245887,2.7023389 0 0 1 -2.2404,-2.87447 2.4245887,2.7023389 0 0 1 2.56249,-2.51812 2.4245887,2.7023389 0 0 1 2.27808,2.83745 2.4245887,2.7023389 0 0 1 -2.52899,2.55984"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="141.77121"
+       y="181.55658"
+       id="text2629-8-5-3"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3-6"
+         x="141.77121"
+         y="181.55658"
+         style="font-size:3.52777767px;stroke-width:0.26458332">Neutral point</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="76.317024"
+       y="215.9334"
+       id="text2629-8-5-3-7"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3-6-5"
+         x="76.317024"
+         y="215.9334"
+         style="font-size:3.52777767px;stroke-width:0.26458332">mg</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="110.19511"
+       y="136.82452"
+       id="text2629-8-5-3-7-3"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3-6-5-5"
+         x="110.19511"
+         y="136.82452"
+         style="font-size:3.52777767px;stroke-width:0.26458332">D</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="49.627216"
+       y="96.289375"
+       id="text2629-8-5-3-7-6"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3-6-5-2"
+         x="49.627216"
+         y="96.289375"
+         style="font-size:3.52777767px;stroke-width:0.26458332">L</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="154.04845"
+       y="149.01912"
+       id="text2629-8-5-3-7-9"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3-6-5-1"
+         x="154.04845"
+         y="149.01912"
+         style="font-size:3.52777767px;stroke-width:0.26458332">M</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.22663872;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:"
+       d="m 153.24224,184.89258 -0.0983,30.19701"
+       id="path4569-5-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.2264246;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1366);marker-end:url(#marker1362)"
+       d="m 74.115737,205.35017 77.817543,0.26906"
+       id="path4569-5-0-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="118.31171"
+       y="203.63969"
+       id="text2629-8-5-3-0"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-2-3-6-6"
+         x="118.31171"
+         y="203.63969"
+         style="font-size:3.52777767px;stroke-width:0.26458332">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="29.250092"
+       y="178.93645"
+       id="text2629-2"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-6"
+         x="29.250092"
+         y="178.93645"
+         style="font-size:3.52777767px;stroke-width:0.26458332">V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="33.190048"
+       y="195.66534"
+       id="text2629-2-7"
+       inkscape:export-filename="/media/niel/WitkruisArend/PrandtlVlerk/P4/PrandtlWingFullScale/pictures/AircraftFBD.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan2627-6-9"
+         x="33.190048"
+         y="195.66534"
+         style="font-size:3.52777767px;stroke-width:0.26458332">V<tspan
+   style="font-size:65%;baseline-shift:sub"
+   id="tspan1432">h</tspan></tspan></text>
   </g>
 </svg>
